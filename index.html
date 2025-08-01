@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sasank Sekhar Patnaik - Portfolio</title>
+  <style>
+    /* Dark theme and responsive design */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #00bcd4;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 1rem;
+    }
+
+    ul {
+      margin-left: 1rem;
+    }
+
+    a {
+      color: #00bcd4;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .profile {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="center">
+    <h1>Sasank Sekhar Patnaik</h1>
+    <p>A Cloud Enthusiast and Beginner Frontend Developer</p>
+    <img src="my pic.jpg" alt="Sasank Photo" class="profile" />
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Sasank Sekhar Patnaik, a passionate cloud enthusiast exploring AWS and web technologies. I'm currently learning frontend development and enjoy building simple yet useful projects combining cloud with code.</p>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript (Learning)</li>
+      <li>AWS Lambda</li>
+      <li>S3, EC2</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Personal Website using HTML and CSS:</strong><br/>
+        Built a responsive static website showcasing my profile and skills.
+      </li><br/>
+      <li>
+        <strong>Email Notification System for S3 using AWS Lambda:</strong><br/>
+        Created a Lambda function to send email alerts on file uploads to an S3 bucket.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sasank8667@gmail.com">sasank8667@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919342761293">+91 9342761293</a></p>
+  </section>
+
+</body>
+</html>
